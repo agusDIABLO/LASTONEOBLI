@@ -1,0 +1,968 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  /*--------------------------HEADER--------------*/
+
+  body{
+  background-color: rgb(228, 228, 226);
+}
+header{
+      width: 100%;
+      display: block;
+      height: 120px;
+      background-color: rgb(0, 10, 0);
+      gap: 70px;
+      margin: 0 auto;
+      text-align: center;
+}
+
+#menuAdmin{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+gap: 10px;
+margin-top: 10px;
+}
+
+#menuCliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+
+.menusA{
+    padding: 8px;
+    background-color: rgb(0, 10, 0);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 1px solid black;
+    margin: 0 4px 0 4px;
+    color: white;
+}
+
+#menuCliente div{
+display: flex;
+gap: 5px;
+margin: 0 auto;
+}
+
+#menuCliente p{
+    padding: 8px;
+    background-color: darkseagreen;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 1px solid black;
+    margin: 0 4px 0 4px;
+}
+
+.menusC{
+    padding: 8px;
+    background-color: darkseagreen;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 1px solid black;
+    margin: 0 4px 0 4px;
+}
+   
+.logout{
+padding: 8px;
+background-color: rgb(141, 141, 141);
+border-radius: 5px;
+font-weight: bolder;
+cursor: pointer;
+margin-top: 5px;
+border: 1px solid black;
+}
+   
+  h1{
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  font-family:  "Permanent Marker", cursive;
+font-weight: 200;
+letter-spacing: 5px;
+}
+
+
+
+
+
+
+.menusA:hover{
+padding: 10px;
+transition: 1s;
+box-shadow: 3px -2px 9px;
+}
+
+.menusC:hover{
+    padding: 10px;
+    transition: 1s;
+    box-shadow: 3px -2px 9px;
+    }
+.logout:hover{
+padding: 10px;
+background-color: rgb(167, 87, 87);
+transition: 1s;
+box-shadow: 3px -2px 9px;
+}
+
+  /*-------------------------LOGIN---------------------------------*/
+  #ingreso{
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  width: 380px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.637);
+  color: white;
+  padding: 15px 0 15px 0;
+  }
+      
+  #ingreso label{
+  display: block;
+  width: 80%;
+  margin: 10px 0;
+  cursor: pointer;
+  font-weight: 600;
+  }  
+  
+  #ingreso input{
+      padding: 9px;
+      width: 80%;
+      box-shadow: 10px;
+  }
+      
+      
+  #ingreso input[type=button]{
+      padding: 8px;
+      width: 85%;
+      align-items: center;
+      cursor: pointer;
+  }
+  
+  #ingreso a{
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  cursor: pointer;
+  }
+  
+  #ingreso p{
+      margin-top: 20px;
+  display: block;
+  color: red;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  }
+  
+  /*-------------------------------------------REGISTRO--------------------------------------------------*/
+  
+  #registro{
+      background-color: aqua;
+      margin: 100px auto;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0 20px 0;
+      border: 1px solid black;
+      background-color: rgba(0, 0, 0, 0.637);
+      color: white;
+  }
+          
+  #registro label{
+      display: block;
+      width: 90%;
+      margin: 10px 0;
+      cursor: pointer;
+      font-weight: 600;
+  }  
+      
+  #registro input{
+          padding: 9px;
+          width: 100%;
+          box-shadow: 10px;
+          cursor: pointer;
+  }
+          
+          
+  #registro input[type=button]{
+          padding: 5px;
+          width: 50%;
+          margin-top: 20px;
+          align-items: center;
+  }
+  
+#registro a{
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+      background-color: white;
+      margin-top: 10px;
+      cursor: pointer;
+}
+ 
+#registro p{
+    color: darkseagreen;
+    padding-top: 15px;
+    font-weight: bolder
+}
+
+
+  /*---------------------------------------CREAR PRODUCTO-------------------------------------------------*/
+  
+  #crearProducto .crear{
+      width: 500px;
+      border: 2px solid black;
+      background-color: rgba(0, 0, 0, 0.637);
+      border: 1px solid black;
+      height: 650px;
+      color: white;
+      padding-top: 20px;
+      margin: 100px auto;
+  }
+      
+  #crearProducto .crear h2{
+      text-align: center;
+  }
+  #crearProducto label{
+      display: block;
+  }
+      
+  #crearProducto form{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px;
+      gap: 25px;
+      font-weight: bolder
+  }
+      
+  #crearProducto .columna{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+      
+  #crearProducto input[type=text]{
+      padding: 8px 4px;
+      width: 98%;
+  }
+      
+  #crearProducto textarea{
+      padding-left: 10px;
+      height: 100px;
+      resize: none;
+  }
+      
+  #crearProducto #btnCrearProducto{
+          padding: 8px 0;
+          width: 100%;
+          margin-top: 20px;
+  }
+      
+  #crearProducto #volverMenuAdmin{
+      text-decoration: none;
+      color: black;
+      background-color: azure;
+      padding: 5px;
+      text-align: center;
+      cursor: pointer;
+  }
+
+  #crearProducto #volverMenuAdmin:hover{
+    padding: 7px;
+    transition: 1s;
+    box-shadow: 3px -2px 9px;
+    background-color: darkseagreen;
+}
+  #crearProducto p{
+      margin-top: 10px;
+      display: block;
+      color: red;
+      font-weight: bolder;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic;
+      text-align: center;
+  }
+  
+  #crearProducto input[type=button]{
+      padding: 5px;
+      width: 70%;
+      margin-top: 20px;
+      align-items: center;
+      cursor: pointer;
+  }
+
+  #crearProducto select{
+   padding: 7px;
+   cursor: pointer;
+}
+  
+  /*---------------LISTA PRODUCTOS-----------------------*/
+  
+  #listaProductos .lista {
+      margin: 100px auto;
+      display: block;
+  }
+  #listaProductos table{
+      margin-top: 20px;
+      width: 60%;
+      height: 450px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+  }
+  
+  #listaProductos img{
+  
+      height: 80px;
+      width: 80px;
+      }
+      
+      #listaProductos td{
+      text-align: center;
+      }
+      
+      #listaProductos th{
+      padding: 20px;
+      border-bottom: 1px solid black;
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+  
+  #listaProductos input[type=number]{
+  width: 40%;
+  padding: 10px 4px;
+  }
+  
+  #listaProductos input[type=button]{
+  padding: 10px;
+  }
+  
+  #listaProductos input[type=button]:hover{
+      padding: 10px;
+      background-color: cadetblue;
+      cursor: pointer;
+  }
+  
+  #listaProductos a{
+  padding: 10px;
+  background-color: azure;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  }
+  #listaProductos a{
+      padding: 10px;
+      background-color: azure;
+      border: 1px solid black;
+      text-decoration: none;
+      color: black;
+  }
+
+#listaProductos a{
+    padding: 10px;
+    background-color: azure;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+#listaProductos a:hover{
+background-color: darkseagreen;
+transition: 1s;
+padding: 12px;
+}
+  
+
+  
+#listaProductos a{
+  cursor: pointer;
+}
+  
+#listaProductos p{
+      margin-top: 25px;
+      color: red;
+      font-weight: bolder;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic;
+      text-align: center;
+  }
+  #listaProductos input[type="checkbox"] {
+    pointer-events: none;
+  }
+
+  #listaProductos input[type=checkbox][checked]{
+    height: 50px;
+    width: 50px;
+    outline:1px solid green;
+    accent-color: green;
+}
+
+#listaProductos  input[type=checkbox][disabled]{
+    height: 50px;
+    width: 50px;
+    outline:1px solid red;
+}
+
+/*---------------LISTA PRODUCTOS OFERTA-----------------------*/
+  
+#listaProductosOferta .lista {
+    margin: 100px auto;
+    display: block;
+}
+#listaProductosOferta table{
+    margin-top: 20px;
+    width: 60%;
+    height: 450px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#listaProductosOferta img{
+
+    height: 80px;
+    width: 80px;
+    }
+    
+#listaProductosOferta td{
+    text-align: center;
+    }
+    
+#listaProductosOferta th{
+    padding: 20px;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#listaProductosOferta input[type=number]{
+width: 40%;
+padding: 10px 4px;
+}
+
+#listaProductosOferta input[type=button]{
+padding: 10px;
+}
+
+#listaProductosOferta input[type=button]:hover{
+    padding: 10px;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+#listaProductosOferta a{
+padding: 10px;
+background-color: azure;
+border: 1px solid black;
+text-decoration: none;
+color: black;
+}
+#listaProductosOferta a{
+    padding: 10px;
+    background-color: azure;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+#listaProductosOferta a{
+  padding: 10px;
+  background-color: azure;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+#listaProductosOferta a:hover{
+background-color: darkseagreen;
+transition: 1s;
+padding: 12px;
+}
+
+
+
+#listaProductosOferta a{
+cursor: pointer;
+}
+
+#listaProductosOferta input[type="checkbox"] {
+  pointer-events: none;
+}
+
+#listaProductosOferta input[type=checkbox][checked]{
+  height: 50px;
+  width: 50px;
+  outline:1px solid green;
+  accent-color: green;
+}
+
+#listaProductosOferta input[type=checkbox][disabled]{
+  height: 50px;
+  width: 50px;
+  outline:1px solid red;
+}
+
+/*---------------ADMINISTRAR PRODUCTOS-----------------------*/
+
+#administrarProductos section{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 800px;
+    }
+
+#administrarProductos .centrado{
+        display: block;
+        width: 1200px;
+        margin: 30px auto;
+        
+}
+#administrarProductos  table{
+        margin-top: 20px;
+        width: 100%;
+        height: 470px;
+        border: 1px solid white;
+}
+    
+#administrarProductos img{
+    
+    height: 80px;
+    width: 80px;
+}
+    
+#administrarProductos td{
+    text-align: center;
+    border: 1px solid black;
+   
+}
+    
+#administrarProductos th{
+    padding: 20px;
+    background-color: grey;
+  
+    }
+    
+#administrarProductos td select{
+    width: 100px;
+    height: 40px;
+}
+    
+#administrarProductos #act{
+        width: 100px;
+        height: 50px;
+        background-color: greenyellow;
+}
+    
+#administrarProductos  #ina{
+        width: 100px;
+        height: 50px;
+        background-color: rgba(255, 0, 0, 0.644);
+}
+#administrarProductos  h2{
+    text-align: center;
+}
+    
+#administrarProductos  input[type=number]{
+    width: 30px;
+    height: 20px;
+    padding: 5px 5px;
+}
+    
+    
+#administrarProductos  input[type=button]{
+        padding: 5px;
+        border-radius: 5px;
+}
+
+#administrarProductos input[type=text]{
+width: 50%;
+text-align: center;
+padding: 5px;
+}
+
+#administrarProductos p{
+    margin-top: 25px;
+    color: red;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+    
+#administrarProductos  #stock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 98%;
+}
+    
+
+#administrarProductos #volverMenuAdmin1{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: azure;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+
+#administrarProductos a:hover{
+    background-color: darkseagreen;
+    transition: 1s;
+    padding: 12px;
+    
+}
+
+  
+#administrarProductos input[type=checkbox]{
+    height: 50px;
+    width: 50px;
+  }
+
+/*-------------------LISTA MIS COMPRAS---------------------------*/
+
+
+#listaMisCompras h1{
+    color: black;
+}
+#listaMisCompras p{
+text-align: center;
+}
+#listaMisCompras h3{
+text-align: center;
+margin-bottom: 10px;
+}
+
+
+#listaMisCompras h2{
+text-align: center;
+}
+
+
+#listaMisCompras .centrado{
+    display: block;
+    width: 1200px;
+    margin: 100px auto;
+}
+
+#listaMisCompras table{
+    width: 60%;
+    height: 450px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin: 20px auto;
+}
+
+
+    
+#listaMisCompras td{
+    text-align: center;
+}
+    
+#listaMisCompras th{
+    padding: 20px;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#listaMisCompras input[type=button]{
+width: 80%;
+height: 50px;
+font-weight: bolder;
+}
+
+#listaMisCompras select{
+height: 30px;
+}
+
+#listaMisCompras .filtro{
+display: flex;
+justify-content: center;
+gap: 10px;
+
+}
+
+#listaMisCompras input[type=button][disabled] {
+    pointer-events: none;
+}
+
+#listaMisCompras input[type=button]{
+    width: 80%;
+    height: 50px;
+    background-color: grey;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#listaMisCompras input[type=button]:hover{
+    width: 80%;
+    height: 50px;
+    background-color: brown;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 3px -2px 9px;
+    cursor: pointer
+}
+
+#listaMisCompras a{
+    padding: 10px;
+    background-color: azure;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#listaMisCompras #pCompras{
+    margin: 10px 0 15px 0;
+    color: red;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+/*-----------LISTA DE APROBACION-----------------------*/
+
+
+p{
+text-align: center;
+}
+h3{
+display: block;
+}
+
+#encabezado h2{
+color: white;
+text-shadow: 1px  0px 0px black,
+0px  1px 0px black, -1px  0px 0px black, 
+0px  -1px 0px black
+}
+h2{
+text-align: center;
+margin-bottom: 10px;
+}
+
+#listaAprobacionCompras #encabezado img{
+    height: 100px;
+    width: 100px;
+    }
+    
+#listaAprobacionCompras  .centrado{
+        display: block;
+        width: 1700px;
+        margin: 100px auto;
+}
+#listaAprobacionCompras  #encabezado a{
+        padding: 10px;
+        background-color: azure;
+        border: 1px solid black;
+        text-decoration: none;
+        color: black;
+    }
+
+#listaAprobacionCompras table{
+        width: 1700px;
+        height: 350px;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        margin: 20px auto;
+} 
+#listaAprobacionCompras td{
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+        
+#listaAprobacionCompras th{
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+    
+#listaAprobacionCompras .botonesAprobar{
+
+    background-color: rgba(45, 255, 80, 0.288);
+}
+
+#listaAprobacionCompras .botonesCancelar{
+    background-color: rgba(252, 38, 38, 0.411);
+}
+
+#listaAprobacionCompras input[type=button]{
+    width: 100%;
+    height: 35px;
+    font-weight: bolder;
+    margin: 2px 0px;
+   
+}
+    
+#listaAprobacionCompras select{
+    height: 30px;
+}
+
+#listaAprobacionCompras .tablas{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+#listaAprobacionCompras .titulos{
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+}
+
+#listaAprobacionCompras input[type=button]{
+    padding: 5px;
+    margin: 15px 0 15px 0;
+    cursor: pointer;
+}
+
+#listaAprobacionCompras #stock{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+height: 98%;
+}
+
+#listaAprobacionCompras #tt{
+gap: 4px;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+
+#listaAprobacionCompras #volverMenuAdmin2{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    background-color: azure;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/*-------------------INFORME DE GANANCIAS--------------------*/
+
+#listaInformeGanancias h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+    
+#listaInformeGanancias #encabezado img{
+    height: 100px;
+    width: 100px;
+}
+ 
+#listaInformeGanancias .centrado{
+    display: block;
+    width: 1500px;
+    margin: 100px auto;
+}
+#listaInformeGanancias table{
+    width: 50%;
+    height: 450px;
+    border-spacing: 0;
+    border-collapse: collapse; 
+    margin: 0 auto;
+}
+    
+#listaInformeGanancias th{
+    background-color: rgb(78, 77, 77);
+    font-size: 20px;
+    padding: 18px;
+    color: azure;
+}
+    
+#listaInformeGanancias .oscuro{
+    background-color: rgb(199, 198, 198);
+}
+    
+#listaInformeGanancias td{
+    text-align: center;
+    background-color: rgb(233, 231, 231);
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bolder;
+}
+#listaInformeGanancias tr:hover{
+    border: 2px solid black;
+    padding: 15px;  
+}
+
+#listaInformeGanancias .total{
+font-weight: bolder;
+font-size: larger;
+}
+
+#listaInformeGanancias #volverMenuAdmin3{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    background-color: azure;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin: 20px auto;
+
+}
+
+#divganancias{
+margin-top: 10px;
+padding-top: 5px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-top: 1px solid;
+}
+
+#pInformes{
+display: contents;
+font-size: 30px ;
+}
+
+#pInformes2{
+display: contents;
+font-size: 25px;
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Obligatorio Programacion 1">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Obligatorio P1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <h1>SWAP E-COMMERCE</h1>
+            <input type="button" value="Logout" class="logout" data-menu="ingreso">
+        </header>
+<!--LOGIN-->
+<div class="ventana" id="ingreso">
+        <h2>Ingrese al Sistema</h2>
+        <label for="loginUser">Ingrese Nombre de Usuario</label>
+        <input type="text" name="" id="loginUser" placeholder="Usuario">
+        <br>
+        <label for="loginPassword">Ingrese Contraseña</label>
+        <input type="text" name="" id="loginPassword" placeholder="***********">
+        <br>
+        <input type="button" value="Ingresar" id="btnIngreso" data-menu="ingreso">
+        <br>
+        <input type="button" value="Regístrese aqui" id="btnIrRegistro" data-menu="registro">
+        <p id="pIngreso"></p>
+</div>  
+<!--VENTANA REGISTRO-->
+<div class="ventana" id="registro">
+    <h2>Registrarse al Sistema</h2>
+    <div>
+    <label for="registroNombre">Ingrese Nombre</label>
+    <input type="text" name="" id="registroNombre" placeholder="Nombre">
+    <label for="registroApellido">Ingrese Apellido</label>
+    <input type="text" name="" id="registroApellido" placeholder="Apellido">
+    <label for="registroUsuario">Ingrese Nombre de Usuario</label>
+    <input type="text" name="" id="registroUsuario" placeholder="Usuario">
+</div>
+<div>
+    <label for="registroPassword">Ingrese Contraseña</label>
+    <input type="text" name="" id="registroPassword" placeholder="***********">
+    <label for="tarjeta">Ingrese Tarjeta de Crédito</label>
+    <input type="text" name="" id="tarjeta" placeholder="WWWW-XXXX-YYYY-ZZZZ" value="4539-3715-6707-0872">
+    <label for="cvc">Ingrese CVC</label>
+    <input type="text" name="" id="cvc" placeholder="CVC">
+</div>
+    <input type="button" value="Registrarse" id="btnRegistro">
+    <p id="pRegistro"></p>
+    <input type="button" value="Login" id="btnIrlogin" data-menu="ingreso">
+</div>  
+
+<!--MENU ADMIN-->
+<div id="menuAdmin" class="ventana">
+    <h2 id="msj1">Bienvenido</h2>
+    <div>
+    <input type="button" value="Crear Productos" class="menusA" id="irAcrearProducto" data-menu="crearProducto">
+    <input type="button" value="Administrar Productos" class="menusA" id="irAgestionarProducto" data-menu="administrarProductos">
+    <input type="button" value="Administrar Compras" class="menusA" id="irAlistaAprobacionCompras" data-menu="listaAprobacionCompras">
+    <input type="button" value="Informe de Ganancias" class="menusA" id="irAInformeDeGanancias"   data-menu="listaInformeGanancias">
+   </div>
+</div>
+
+<!--MENU CLIENTE-->
+<div id="menuCliente" class="ventana">
+    <h2 id="msj">Bienvenido</h2>
+    <div>
+    <input type="button" value="Lista de Productos" class="menusC" id="irAlistaProdMenu" data-menu="listaProductos">
+    <input type="button" value="Ofertas" class="menusC" id="irOfertasMenu" data-menu="listaProductosOferta">
+    <input type="button" value="Mis Compras" class="menusC" id="irAmisComprasMenu" data-menu="listaMisCompras">
+    <p id="sal">Saldo:</p>
+   </div>
+</div>
+
+<!--CREAR PRODUCTO-->
+<div class="ventana" id="crearProducto">
+    <section class="crear">
+     <h2>Crear Productos</h2>
+     <form action="" method="get" autocomplete="on">
+         <div class="columna">
+         <label for="nombre">Nombre del Producto</label>
+         <input type="text"name="nombre" id="nombreProducto" placeholder="Pelota" >
+         <label for="precio">Precio</label>
+         <input type="text" name="precio" id="precio" placeholder="400$">
+         </div>
+         <div class="columna">
+             <label for="img">URL de la Imagen</label>
+             <select name="" id="img">
+                <option value="img/pelota.jpg">Pelota de futbol</option>
+                    <option value="img/botines.jpg">Botin de futbol</option>
+                        <option value="img/botella.jpg">Botella </option>
+                            <option value="img/guantes.jpg">Guantes de boxeo</option>
+                                <option value="img/short.jpg">Short deportivo</option>
+                                    <option value="img/rugby.jpg">Pelota de rugby</option>
+                                        <option value="img/campera.jpg">Campera deportiva</option>
+                                            <option value="img/bolso.jpeg">Bolso</option>
+                                                <option value="img/bicicleta.jpg">Bicicleta</option>
+                                                    <option value="img/gorra.jpg">Gorra</option>
+             </select>
+             <label for="stock">Stock Disponible</label>
+             <input type="text" name="asunto" id="stock" placeholder="">
+             </div>
+             <div class="columna">
+             <label for="descripcion">Descripcion</label>
+             <textarea name="desc" id="descripcion" placeholder="Descripcion del producto"></textarea>
+             <input type="button" value="Crear Producto" id="btnCrearProducto">
+             <a id="volverMenuAdmin" data-menu="menuAdmin">Volver al Menu</a>
+             <p id="pCrearProducto"></p>
+         </div>
+        </form>
+    </section>
+ </div>
+
+<!---LISTA DE PRODUCTOS-->
+<div class="ventana" id="listaProductos"> <!--CLIENTE-->
+    <section class="lista">
+        <div class="centrado">
+          <h2>Lista de Productos</h2>
+            <table>
+                <thead> 
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Precio</th> 
+                        <th>Cantidad</th>
+                        <th>Oferta</th>
+                        <th>Comprar</th>
+                    </tr>
+                </thead>
+                <tbody id="tableProductos">
+                </tbody>
+               </table>
+               <div>
+                <a id="irOfertas1" data-menu="listaProductosOferta">Ver productos en Oferta</a>
+                <a id="irMisCompras" data-menu="listaMisCompras">Mis Compras</a>
+                <a id="volverMenuCliente" data-menu="menuCliente">Volver al Menu</a>
+                <p id="pLista"></p>
+            </div>
+        </div>
+       </section>
+    </div>
+
+<div class="ventana" id="listaProductosOferta"> <!--CLIENTE-->
+        <section class="lista">
+            <div class="centrado">
+              <h2>Lista de Productos</h2>
+                <table>
+                    <thead> 
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Producto</th>
+                            <th>Precio</th> 
+                            <th>Cantidad</th>
+                            <th>Oferta</th>
+                            <th>Comprar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableProductosOferta">
+                    </tbody>
+                   </table>
+                   <div>
+                    <a id="irMisCompras1" data-menu="listaMisCompras">Mis Compras</a>
+                    <a id="volverMenuCliente2" data-menu="menuCliente">Volver al Menu</a>
+                </div>
+            </div>
+           </section>
+</div>
+
+ <!--ADMINISTRAR PRODUCTOS-->   
+ <section class="ventana" id="administrarProductos">
+    <div class="centrado">
+      <h2>Lista de Productos Creados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>ID</th>
+                    <th>Precio</th> 
+                    <th>Stock</th>
+                    <th>Estado</th>
+                    <th>Oferta</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tableAdministrarProductos">
+            </tbody>
+           </table>
+           <p id="admProd"></p>
+           <p>Solo se aceptan los valores "activo", "pausado", "false" y "true"</p> 
+           <a id="volverMenuAdmin1"  data-menu="menuAdmin">Volver al Menu</a>
+    </div>
+   </section>     
+<!---LISTA DE MIS COMPRAS-->
+    <section class="ventana" id="listaMisCompras">
+        <div class="centrado">
+            <div class="filtro">
+                <h2>Mi lista de compras</h2>
+                <select name="" id="estado">
+                    <option value="TodasLasCompras">Todas las compras</option>
+                    <option value="Aprobada">Aprobadas</option>
+                     <option value="Pendiente">Pendientes</option>
+                     <option value="Cancelada">Canceladas</option>
+                    </select>
+                <a id="volverMenuCliente1" data-menu="menuCliente">Volver al Menu</a>
+            </div>
+            <table id="">
+                <thead>
+                    <tr>
+                        <th>Nombre Producto</th>
+                        <th>Cantidad</th>
+                        <th>Monto Total</th> 
+                        <th>Estado</th>
+                        <th>Cancelar Compra</th>
+                    </tr>
+                </thead>
+                <tbody id="tableMisCompras">
+
+                </tbody>
+               </table>
+               <p id="pCompras"></p>
+               <h3>Compras Aprobadas:</h3>
+               <p id="monto"></p>
+               <p id="saldoDisponible"></p>
+        </div>
+       </section>  
+ <!---LISTA DE APROBACION DE COMPRAS-->
+ <section class="ventana" id="listaAprobacionCompras">
+    <div class="centrado">
+            <h2>Listas de Aprobacion</h2>
+            <a id="volverMenuAdmin2" data-menu="menuAdmin">Volver al Menu</a>
+            <div class="titulos">
+                <h3>Lista Aprobadas</h3>
+                <h3>Lista Pendientes</h3>
+                <h3>Lista Canceladas</h3>
+            </div>
+            <div class="tablas">
+        <table>        <!--PRIMER LISTA-->
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Saldo Disponible</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Monto Total</th> 
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="listaAprobadas">
+
+            </tbody>
+        </table>
+           
+           <table >      <!--SEGUNDA LISTA-->
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Saldo Disponible</th>
+                    <th>Producto</th>
+                    <th>Activo</th>
+                    <th>Cantidad</th>
+                    <th>Monto Total</th> 
+                    <th>Estado</th>
+                    <th>Aprobar/Cancelar</th>
+                </tr>
+            </thead>
+            <tbody id="listaPendientes">
+            </tbody>
+           </table>
+           <table>                  <!--TERCER LISTA-->
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Saldo Disponible</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Monto Total</th> 
+                    <th>Estado</th>
+                   
+                </tr>
+            </thead>
+            <tbody id="listaCanceladas">
+            </tbody>
+           </table>
+    </div>
+</div>
+   </section>
+<!--INFORME DE GANANCIAS-->
+<section class="ventana" id="listaInformeGanancias">
+    <div class="centrado">
+    <h2>Informe de Ganancias</h2>
+   <table>
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Unidades Vendidas</th>
+            <!--<th>Ganancia Total de Compras</th>-->
+        </tr>
+    </thead>
+    <tbody id="tablaInformeGanancias">
+    </tbody>
+   </table>
+   <div id="divganancias">
+   <p id="pInformes2">Ganancias totales:</p>
+   <p id="pInformes"></p>
+</div>
+   <a id="volverMenuAdmin3" data-menu="menuAdmin">Volver al Menu</a>
+</div>
+</section>      
+        
+ <script src="javascript/sistema.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
